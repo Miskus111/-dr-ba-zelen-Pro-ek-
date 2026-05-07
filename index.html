@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="referrer" content="no-referrer" />
-  <title>Údržba zeleně Prošek | Údržba zeleně a zahradnické služby</title>
-  <meta name="description" content="Údržba zeleně Prošek nabízí sekání trávy, stříhání živých plotů, rizikové kácení stromů, odvoz odpadu a kompletní zahradnické služby pro domy, firmy i veřejné prostory." />
+  <title>Údržba zeleně Prošek | Zahradnické služby</title>
+  <meta name="description" content="Údržba zeleně Prošek nabízí sekání trávy, stříhání živých plotů, rizikové kácení stromů, odvoz odpadu a kompletní zahradnické služby." />
 
   <style>
     :root {
@@ -20,15 +19,8 @@
       --radius: 24px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -37,10 +29,8 @@
       line-height: 1.6;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
 
     .container {
       width: min(1120px, calc(100% - 32px));
@@ -65,7 +55,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(255, 250, 240, 0.95);
+      background: rgba(255, 250, 240, 0.96);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid rgba(47, 107, 63, 0.14);
     }
@@ -102,7 +92,6 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
     }
 
     nav ul {
@@ -114,9 +103,7 @@
       font-weight: 800;
     }
 
-    nav a:hover {
-      color: var(--green);
-    }
+    nav a:hover { color: var(--green); }
 
     .btn {
       display: inline-flex;
@@ -138,10 +125,9 @@
     }
 
     .btn.secondary {
-      background: rgba(255, 255, 255, 0.92);
+      background: rgba(255, 255, 255, 0.94);
       color: var(--green-dark);
       box-shadow: none;
-      border: 1px solid rgba(255, 255, 255, 0.55);
     }
 
     .hero {
@@ -151,7 +137,7 @@
       align-items: center;
       color: var(--white);
       background:
-        linear-gradient(rgba(8, 35, 20, 0.40), rgba(8, 35, 20, 0.64)),
+        linear-gradient(rgba(8, 35, 20, 0.42), rgba(8, 35, 20, 0.68)),
         url('https://i.imgur.com/Jkh8q8G.jpeg');
       background-size: cover;
       background-position: center;
@@ -163,22 +149,12 @@
       text-align: center;
     }
 
-    .badge {
-      display: inline-flex;
-      padding: 9px 14px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.92);
-      color: var(--green-dark);
-      font-weight: 900;
-      margin-bottom: 18px;
-    }
-
     h1 {
       font-size: clamp(38px, 6vw, 68px);
       line-height: 1.04;
       letter-spacing: -2px;
       margin-bottom: 22px;
-      text-shadow: 0 4px 22px rgba(0, 0, 0, 0.35);
+      text-shadow: 0 4px 22px rgba(0, 0, 0, 0.36);
     }
 
     h2 {
@@ -206,7 +182,7 @@
       color: var(--white);
       margin-left: auto;
       margin-right: auto;
-      text-shadow: 0 3px 18px rgba(0, 0, 0, 0.35);
+      text-shadow: 0 3px 18px rgba(0, 0, 0, 0.38);
     }
 
     .hero-actions {
@@ -214,12 +190,10 @@
       justify-content: center;
       gap: 14px;
       flex-wrap: wrap;
-      margin: 28px 0 0;
+      margin-top: 28px;
     }
 
-    section {
-      padding: 78px 0;
-    }
+    section { padding: 78px 0; }
 
     .section-title {
       max-width: 780px;
@@ -267,19 +241,10 @@
       margin-bottom: 16px;
     }
 
-    .card p,
-    .card li {
-      color: var(--muted);
-    }
+    .card p, .card li { color: var(--muted); }
+    .card ul { padding-left: 20px; margin-top: 14px; }
 
-    .card ul {
-      padding-left: 20px;
-      margin-top: 14px;
-    }
-
-    .about {
-      background: var(--green-light);
-    }
+    .about { background: var(--green-light); }
 
     .about-grid {
       display: grid;
@@ -322,7 +287,6 @@
       width: 100%;
       height: 330px;
       object-fit: cover;
-      display: block;
       background: #f5f5f5;
     }
 
@@ -356,9 +320,7 @@
       border: 1px solid rgba(47, 107, 63, 0.12);
     }
 
-    .steps {
-      counter-reset: step;
-    }
+    .steps { counter-reset: step; }
 
     .step {
       position: relative;
@@ -394,10 +356,7 @@
       box-shadow: var(--shadow);
     }
 
-    .cta h2,
-    .cta p {
-      color: var(--white);
-    }
+    .cta h2, .cta p { color: var(--white); }
 
     .contact-box {
       display: grid;
@@ -425,9 +384,7 @@
         gap: 18px;
       }
 
-      nav ul {
-        display: none;
-      }
+      nav ul { display: none; }
 
       .nav {
         min-height: 68px;
@@ -457,19 +414,12 @@
         background-position: center top;
       }
 
-      section {
-        padding: 56px 0;
-      }
+      section { padding: 56px 0; }
     }
 
     @media (max-width: 560px) {
-      .container {
-        width: min(100% - 20px, 1120px);
-      }
-
-      .topbar {
-        display: none;
-      }
+      .container { width: min(100% - 20px, 1120px); }
+      .topbar { display: none; }
 
       .logo {
         font-size: 15px;
@@ -486,13 +436,11 @@
         height: 46px;
       }
 
-      .nav {
-        padding: 8px 0;
-      }
+      .nav { padding: 8px 0; }
 
       .hero {
-        min-height: 500px;
-        padding: 48px 0 44px;
+        min-height: 520px;
+        padding: 52px 0 44px;
       }
 
       h1 {
@@ -500,14 +448,8 @@
         letter-spacing: -0.8px;
       }
 
-      h2 {
-        font-size: 29px;
-      }
-
-      .lead,
-      .hero .lead {
-        font-size: 16px;
-      }
+      h2 { font-size: 29px; }
+      .lead, .hero .lead { font-size: 16px; }
 
       .hero-actions {
         display: grid;
@@ -517,9 +459,7 @@
         margin-right: auto;
       }
 
-      .btn {
-        width: 100%;
-      }
+      .btn { width: 100%; }
 
       .nav > .btn {
         width: auto;
@@ -533,9 +473,7 @@
         border-radius: 18px;
       }
 
-      .about-photo {
-        min-height: 250px;
-      }
+      .about-photo { min-height: 250px; }
 
       .work-gallery {
         grid-template-columns: 1fr;
@@ -548,9 +486,7 @@
         object-fit: cover;
       }
 
-      .work-item-content {
-        padding: 17px;
-      }
+      .work-item-content { padding: 17px; }
 
       .cta {
         padding: 24px 18px;
@@ -562,7 +498,7 @@
 <body>
   <div class="topbar">
     <div class="container">
-      <span>Údržba zeleně a profesionální zahradnické služby</span>
+      <span>Údržba zeleně a zahradnické služby</span>
       <a href="tel:+420775406016">Kontakt: +420 775 406 016</a>
     </div>
   </div>
@@ -571,7 +507,7 @@
     <div class="container nav">
       <a class="logo" href="#uvod" aria-label="Úvod">
         <span class="logo-mark">
-          <img src="https://i.imgur.com/J6DmG2F.jpeg" referrerpolicy="no-referrer" loading="eager" alt="Logo Údržba zeleně Prošek" />
+          <img src="https://i.imgur.com/J6DmG2F.jpeg" referrerpolicy="no-referrer" alt="Logo Údržba zeleně Prošek" />
         </span>
         <span>Údržba zeleně Prošek</span>
       </a>
@@ -595,9 +531,8 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <div class="badge">Profesionální údržba zeleně pro domy, firmy i obce</div>
           <h1>Kompletní údržba zeleně a zahradnické služby</h1>
-          <p class="lead">Údržba zeleně Prošek nabízí profesionální sekání trávy, stříhání živých plotů, rizikové kácení a ořez stromů, odvoz zahradního odpadu i kompletní realizace a pravidelnou údržbu zeleně.</p>
+          <p class="lead">Údržba zeleně Prošek nabízí sekání trávy, stříhání živých plotů, rizikové kácení a ořez stromů, odvoz zahradního odpadu i pravidelnou údržbu zeleně.</p>
           <div class="hero-actions">
             <a class="btn" href="tel:+420775406016">Zavolat</a>
             <a class="btn secondary" href="#sluzby">Naše služby</a>
@@ -611,75 +546,16 @@
         <div class="section-title">
           <p class="eyebrow">Služby</p>
           <h2>Kompletní služby v oblasti údržby zeleně</h2>
-          <p class="lead">Zajišťujeme jednorázové i pravidelné zahradnické práce pro soukromé i firemní zákazníky. Každou zakázku řešíme individuálně podle rozsahu a náročnosti prací.</p>
+          <p class="lead">Zajišťujeme jednorázové i pravidelné zahradnické práce pro soukromé i firemní zákazníky.</p>
         </div>
 
         <div class="grid-3">
-          <article class="card">
-            <div class="icon">🌿</div>
-            <h3>Sekání trávy a travnatých ploch</h3>
-            <p>Pravidelné i jednorázové sekání zahrad, travnatých ploch, firemních areálů a veřejné zeleně.</p>
-            <ul>
-              <li>sekání menších i větších ploch</li>
-              <li>úprava okrajů a dočištění</li>
-              <li>úklid po dokončení práce</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="icon">✂️</div>
-            <h3>Stříhání živých plotů a keřů</h3>
-            <p>Úprava živých plotů, tvarování keřů a pravidelná péče o okrasnou zeleň kolem domu i areálu.</p>
-            <ul>
-              <li>stříhání živých plotů</li>
-              <li>tvarování okrasných keřů</li>
-              <li>odklizení ostříhané zeleně</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="icon">🪚</div>
-            <h3>Rizikové kácení a ořez stromů</h3>
-            <p>Ořez stromů, prořezávání korun a rizikové kácení podle podmínek konkrétního místa.</p>
-            <ul>
-              <li>ořez a prořez stromů</li>
-              <li>rizikové kácení</li>
-              <li>bezpečný postup práce</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="icon">🚚</div>
-            <h3>Odvoz zahradního odpadu</h3>
-            <p>Odvoz větví, trávy, listí a dalšího bioodpadu po sekání, stříhání, kácení nebo úklidu zahrady.</p>
-            <ul>
-              <li>odvoz větví a dřevní hmoty</li>
-              <li>odklizení trávy a listí</li>
-              <li>čisté předání pozemku</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="icon">🏢</div>
-            <h3>Údržba parků a firemních areálů</h3>
-            <p>Kompletní údržba zeleně pro firmy, obce, parky, veřejné plochy a větší venkovní areály.</p>
-            <ul>
-              <li>pravidelné sekání ploch</li>
-              <li>péče o veřejnou zeleň</li>
-              <li>dlouhodobá spolupráce</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="icon">🌳</div>
-            <h3>Pravidelná údržba a realizace zahrad</h3>
-            <p>Pravidelná péče o zahrady i celkové realizace zahradních projektů od přípravy po finální úpravy.</p>
-            <ul>
-              <li>celoroční péče o zahrady</li>
-              <li>realizace zahradních projektů</li>
-              <li>individuální řešení zakázky</li>
-            </ul>
-          </article>
+          <article class="card"><div class="icon">🌿</div><h3>Sekání trávy a travnatých ploch</h3><p>Pravidelné i jednorázové sekání zahrad, travnatých ploch, firemních areálů a veřejné zeleně.</p><ul><li>sekání menších i větších ploch</li><li>úprava okrajů a dočištění</li><li>úklid po dokončení práce</li></ul></article>
+          <article class="card"><div class="icon">✂️</div><h3>Stříhání živých plotů a keřů</h3><p>Úprava živých plotů, tvarování keřů a pravidelná péče o okrasnou zeleň.</p><ul><li>stříhání živých plotů</li><li>tvarování okrasných keřů</li><li>odklizení ostříhané zeleně</li></ul></article>
+          <article class="card"><div class="icon">🪚</div><h3>Rizikové kácení a ořez stromů</h3><p>Ořez stromů, prořezávání korun a rizikové kácení podle podmínek konkrétního místa.</p><ul><li>ořez a prořez stromů</li><li>rizikové kácení</li><li>bezpečný postup práce</li></ul></article>
+          <article class="card"><div class="icon">🚚</div><h3>Odvoz zahradního odpadu</h3><p>Odvoz větví, trávy, listí a dalšího bioodpadu po sekání, stříhání, kácení nebo úklidu.</p><ul><li>odvoz větví a dřevní hmoty</li><li>odklizení trávy a listí</li><li>čisté předání pozemku</li></ul></article>
+          <article class="card"><div class="icon">🏢</div><h3>Údržba parků a firemních areálů</h3><p>Kompletní údržba zeleně pro firmy, obce, parky, veřejné plochy a větší venkovní areály.</p><ul><li>pravidelné sekání ploch</li><li>péče o veřejnou zeleň</li><li>dlouhodobá spolupráce</li></ul></article>
+          <article class="card"><div class="icon">🌳</div><h3>Pravidelná údržba a realizace zahrad</h3><p>Pravidelná péče o zahrady i celkové realizace zahradních projektů.</p><ul><li>celoroční péče o zahrady</li><li>realizace zahradních projektů</li><li>individuální řešení zakázky</li></ul></article>
         </div>
       </div>
     </section>
@@ -690,8 +566,8 @@
         <div>
           <p class="eyebrow">O mně</p>
           <h2>Profesionální péče o zeleň a zahrady</h2>
-          <p class="lead">Firma Údržba zeleně Prošek se zaměřuje na profesionální údržbu zeleně, zahradnické práce a realizace zahradních projektů pro soukromé i firemní zákazníky.</p>
-          <p class="lead">Zajišťujeme kvalitní práci, spolehlivý přístup a individuální řešení každé zakázky. Nabízíme pravidelnou údržbu i jednorázové zásahy včetně odvozu odpadu a péče o veřejné či firemní plochy.</p>
+          <p class="lead">Firma Údržba zeleně Prošek se zaměřuje na údržbu zeleně, zahradnické práce a realizace zahradních projektů pro soukromé i firemní zákazníky.</p>
+          <p class="lead">Zajišťujeme kvalitní práci, spolehlivý přístup a individuální řešení každé zakázky.</p>
         </div>
       </div>
     </section>
@@ -701,62 +577,19 @@
         <div class="section-title center">
           <p class="eyebrow">Moje práce</p>
           <h2>Ukázky realizací a pravidelné údržby</h2>
-          <p class="lead" style="margin-left:auto; margin-right:auto;">Ukázky realizací zahrad, pravidelné údržby zeleně, rizikového kácení a dalších zahradnických služeb.</p>
+          <p class="lead" style="margin-left:auto; margin-right:auto;">Ukázky zahrad, pravidelné údržby zeleně, rizikového kácení a dalších zahradnických služeb.</p>
         </div>
 
         <div class="work-gallery">
-          <article class="card work-item">
-            <img src="https://i.imgur.com/vA66atU.jpeg" referrerpolicy="no-referrer" loading="lazy" alt="Zahrada po pravidelné údržbě" />
-            <div class="work-item-content">
-              <h3>Zahrada po pravidelné údržbě</h3>
-              <p>Pravidelná péče o trávník, okrasné dřeviny a celkový vzhled zahrady.</p>
-            </div>
-          </article>
-
-          <article class="card work-item">
-            <img src="https://i.imgur.com/Pxq7VWX.jpeg" referrerpolicy="no-referrer" loading="lazy" alt="Údržba travnatých ploch" />
-            <div class="work-item-content">
-              <h3>Údržba travnatých ploch</h3>
-              <p>Sekání, začištění okrajů a úprava zeleně kolem domu.</p>
-            </div>
-          </article>
-
-          <article class="card work-item">
-            <img src="https://i.imgur.com/JwMXJ9D.jpeg" referrerpolicy="no-referrer" loading="lazy" alt="Kompletní údržba zahrady" />
-            <div class="work-item-content">
-              <h3>Kompletní údržba zahrady</h3>
-              <p>Dlouhodobá péče o zahradní prostor s důrazem na čistotu a detail.</p>
-            </div>
-          </article>
-
-          <article class="card work-item">
-            <img src="https://i.imgur.com/yKkO7VR.jpeg" referrerpolicy="no-referrer" loading="lazy" alt="Skalky a realizace" />
-            <div class="work-item-content">
-              <h3>Skalky a realizace</h3>
-              <p>Realizace skalek, výsadba rostlin a úpravy zahradních detailů.</p>
-            </div>
-          </article>
-
-          <article class="card work-item">
-            <img src="https://i.imgur.com/vEYjHv5.jpeg" referrerpolicy="no-referrer" loading="lazy" alt="Rizikové kácení" />
-            <div class="work-item-content">
-              <h3>Rizikové kácení</h3>
-              <p>Bezpečné kácení stromů, ořezy korun a rizikové zásahy v náročných podmínkách.</p>
-            </div>
-          </article>
-
-          <article class="card work-item">
-            <img src="https://i.imgur.com/rIVQdOZ.jpeg" referrerpolicy="no-referrer" loading="lazy" alt="Odvoz zahradního odpadu" />
-            <div class="work-item-content">
-              <h3>Odvoz zahradního odpadu</h3>
-              <p>Odvoz větví, bioodpadu a kompletní úklid po zahradnických pracích.</p>
-            </div>
-          </article>
+          <article class="card work-item"><img src="https://i.imgur.com/vA66atU.jpeg" referrerpolicy="no-referrer" alt="Zahrada po pravidelné údržbě" /><div class="work-item-content"><h3>Zahrada po pravidelné údržbě</h3><p>Pravidelná péče o trávník, okrasné dřeviny a celkový vzhled zahrady.</p></div></article>
+          <article class="card work-item"><img src="https://i.imgur.com/Pxq7VWX.jpeg" referrerpolicy="no-referrer" alt="Údržba travnatých ploch" /><div class="work-item-content"><h3>Údržba travnatých ploch</h3><p>Sekání, začištění okrajů a úprava zeleně kolem domu.</p></div></article>
+          <article class="card work-item"><img src="https://i.imgur.com/JwMXJ9D.jpeg" referrerpolicy="no-referrer" alt="Kompletní údržba zahrady" /><div class="work-item-content"><h3>Kompletní údržba zahrady</h3><p>Dlouhodobá péče o zahradní prostor s důrazem na čistotu a detail.</p></div></article>
+          <article class="card work-item"><img src="https://i.imgur.com/yKkO7VR.jpeg" referrerpolicy="no-referrer" alt="Skalky a realizace" /><div class="work-item-content"><h3>Skalky a realizace</h3><p>Realizace skalek, výsadba rostlin a úpravy zahradních detailů.</p></div></article>
+          <article class="card work-item"><img src="https://i.imgur.com/vEYjHv5.jpeg" referrerpolicy="no-referrer" alt="Rizikové kácení" /><div class="work-item-content"><h3>Rizikové kácení</h3><p>Bezpečné kácení stromů, ořezy korun a rizikové zásahy v náročných podmínkách.</p></div></article>
+          <article class="card work-item"><img src="https://i.imgur.com/rIVQdOZ.jpeg" referrerpolicy="no-referrer" alt="Odvoz zahradního odpadu" /><div class="work-item-content"><h3>Odvoz zahradního odpadu</h3><p>Odvoz větví, bioodpadu a kompletní úklid po zahradnických pracích.</p></div></article>
         </div>
 
-        <div class="work-note">
-          Máte zájem o podobnou realizaci? Kontaktujte nás a připravíme řešení na míru.
-        </div>
+        <div class="work-note">Máte zájem o podobnou realizaci? Kontaktujte nás a připravíme řešení na míru.</div>
       </div>
     </section>
 
@@ -767,23 +600,10 @@
           <h2>Reference zákazníků</h2>
           <p class="lead">Spokojenost zákazníků a kvalitně odvedená práce jsou pro nás prioritou.</p>
         </div>
-
         <div class="grid-3">
-          <article class="card">
-            <h3>★★★★★</h3>
-            <p>„Rychlá domluva, zahrada posekaná a uklizená. Určitě se ozveme znovu.“</p>
-            <p><strong>— Rodinný dům</strong></p>
-          </article>
-          <article class="card">
-            <h3>★★★★★</h3>
-            <p>„Pomohl nám s úklidem po zimě. Pracoval pečlivě a bez problémů.“</p>
-            <p><strong>— Chata</strong></p>
-          </article>
-          <article class="card">
-            <h3>★★★★★</h3>
-            <p>„Férový přístup, slušné vystupování a dobrá práce. Doporučuji.“</p>
-            <p><strong>— Spokojený zákazník</strong></p>
-          </article>
+          <article class="card"><h3>★★★★★</h3><p>„Rychlá domluva, zahrada posekaná a uklizená. Určitě se ozveme znovu.“</p><p><strong>— Rodinný dům</strong></p></article>
+          <article class="card"><h3>★★★★★</h3><p>„Pomohl nám s úklidem po zimě. Pracoval pečlivě a bez problémů.“</p><p><strong>— Chata</strong></p></article>
+          <article class="card"><h3>★★★★★</h3><p>„Férový přístup, slušné vystupování a dobrá práce. Doporučuji.“</p><p><strong>— Spokojený zákazník</strong></p></article>
         </div>
       </div>
     </section>
@@ -812,22 +632,10 @@
           <h2>Jak probíhá spolupráce</h2>
         </div>
         <div class="steps">
-          <div class="step">
-            <h3>Kontakt</h3>
-            <p>Zavoláte nebo napíšete, co je potřeba na zahradě udělat.</p>
-          </div>
-          <div class="step">
-            <h3>Domluva termínu</h3>
-            <p>Domluvíme vhodný termín, rozsah prací a orientační cenu.</p>
-          </div>
-          <div class="step">
-            <h3>Práce na zahradě</h3>
-            <p>Práce provedeme podle dohody včetně úklidu a případného odvozu odpadu.</p>
-          </div>
-          <div class="step">
-            <h3>Hotovo</h3>
-            <p>Zahrada je upravená, čistá a připravená k dalšímu užívání.</p>
-          </div>
+          <div class="step"><h3>Kontakt</h3><p>Zavoláte nebo napíšete, co je potřeba na zahradě udělat.</p></div>
+          <div class="step"><h3>Domluva termínu</h3><p>Domluvíme vhodný termín, rozsah prací a orientační cenu.</p></div>
+          <div class="step"><h3>Práce na zahradě</h3><p>Práce provedeme podle dohody včetně úklidu a případného odvozu odpadu.</p></div>
+          <div class="step"><h3>Hotovo</h3><p>Zahrada je upravená, čistá a připravená k dalšímu užívání.</p></div>
         </div>
       </div>
     </section>
@@ -837,36 +645,24 @@
         <div class="cta">
           <div>
             <h2>Chcete pomoct se zahradou?</h2>
-            <p>Zajistíme profesionální péči o vaši zahradu, firemní areál nebo veřejnou zeleň. Nezávazně nás kontaktujte.</p>
+            <p>Zajistíme péči o vaši zahradu, firemní areál nebo veřejnou zeleň. Nezávazně nás kontaktujte.</p>
           </div>
           <a class="btn secondary" href="tel:+420775406016">Zavolat</a>
         </div>
 
         <div class="contact-box">
-          <div class="card">
-            <h3>Telefon</h3>
-            <p><a href="tel:+420775406016">+420 775 406 016</a></p>
-          </div>
-          <div class="card">
-            <h3>E-mail</h3>
-            <p><a href="mailto:udrzbazelen@gmail.com">udrzbazelen@gmail.com</a></p>
-          </div>
-          <div class="card">
-            <h3>Adresa</h3>
-            <p>Zahradní 87, Skřivany</p>
-          </div>
+          <div class="card"><h3>Telefon</h3><p><a href="tel:+420775406016">+420 775 406 016</a></p></div>
+          <div class="card"><h3>E-mail</h3><p><a href="mailto:udrzbazelen@gmail.com">udrzbazelen@gmail.com</a></p></div>
+          <div class="card"><h3>Adresa</h3><p>Zahradní 87, Skřivany</p></div>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      © 2026 Údržba zeleně Prošek | Martin Prošek | IČO: 67790101
-    </div>
+    <div class="container">© 2026 Údržba zeleně Prošek | Martin Prošek | IČO: 67790101</div>
   </footer>
 
-  <!-- Vercel Analytics -->
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
