@@ -59,8 +59,8 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(251, 247, 236, 0.88);
-      backdrop-filter: blur(16px);
+      background: #fbf7ec;
+      backdrop-filter: none;
       border-bottom: 1px solid var(--border);
     }
 
@@ -157,14 +157,7 @@
       background-position: center;
     }
 
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: auto 0 0;
-      height: 140px;
-      background: linear-gradient(180deg, transparent, var(--cream));
-      pointer-events: none;
-    }
+    
 
     .hero-content {
       position: relative;
@@ -183,7 +176,7 @@
       color: var(--white);
       font-weight: 900;
       margin-bottom: 18px;
-      backdrop-filter: blur(10px);
+      backdrop-filter: none;
     }
 
     h1 {
@@ -243,7 +236,7 @@
       border-radius: 20px;
       background: rgba(255, 255, 255, 0.12);
       border: 1px solid rgba(255, 255, 255, 0.18);
-      backdrop-filter: blur(10px);
+      backdrop-filter: none;
     }
 
     .stat strong { display: block; font-size: 22px; }
