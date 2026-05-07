@@ -183,7 +183,7 @@
       overflow: hidden;
       background:
         linear-gradient(90deg, rgba(5, 32, 16, 0.74), rgba(14, 74, 33, 0.34), rgba(5, 32, 16, 0.70)),
-        url('https://i.imgur.com/1CLA6gq.jpeg');
+        url('https://i.imgur.com/lp6axa7.jpeg');
       background-size: cover;
       background-position: center;
       border-bottom-left-radius: 42px;
@@ -331,7 +331,7 @@
       height: 56px;
       border-radius: 18px;
       background:
-        linear-gradient(135deg, rgba(223,244,223,1), rgba(255,255,255,1));rgba(255,255,255,1));
+        linear-gradient(135deg, rgba(223,244,223,1), rgba(255,255,255,1));
       display: grid;
       place-items: center;
       color: var(--green);
@@ -486,6 +486,83 @@
       margin-top: 24px;
     }
 
+    .map-card {
+      margin-top: 34px;
+      overflow: hidden;
+      border-radius: 34px;
+      background: linear-gradient(135deg, #0f2418, #173a27);
+      box-shadow: 0 26px 60px rgba(12,41,23,0.28);
+      border: 1px solid rgba(255,255,255,0.06);
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      min-height: 420px;
+    }
+
+    .map-head {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 54px;
+      background: transparent;
+      color: white;
+    }
+
+    .map-head p {
+      color: rgba(255,255,255,0.78);
+      margin-top: 10px;
+      max-width: 420px;
+      font-size: 17px;
+    }
+
+    .map-head h3 {
+      color: white;
+      font-size: 44px;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+
+    .map-label {
+      color: #9de27e;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      font-size: 13px;
+    }
+
+    .map-frame {
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+      border: 0;
+      display: block;
+    }
+
+    .footer-top {
+      background: var(--green-dark);
+      color: rgba(255,255,255,0.9);
+      padding: 34px 0;
+      margin-top: 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .footer-grid h3 {
+      color: white;
+      margin-bottom: 8px;
+    }
+
+    .footer-grid p,
+    .footer-grid a {
+      color: rgba(255,255,255,0.78);
+    }
+
     footer {
       padding: 32px 0;
       color: var(--muted);
@@ -498,7 +575,9 @@
       .grid-3,
       .about-grid,
       .contact-box,
-      .cta {
+      .cta,
+      .map-card,
+      .footer-grid {
         grid-template-columns: 1fr;
       }
 
@@ -566,6 +645,20 @@
       .step { padding: 22px 18px 22px 76px; }
       .step::before { left: 18px; top: 22px; width: 42px; height: 42px; }
       .cta { padding: 28px 20px; border-radius: 28px; text-align: center; }
+      .map-head {
+        padding: 34px 24px;
+        text-align: center;
+        align-items: center;
+      }
+
+      .map-head h3 {
+        font-size: 34px;
+      }
+
+      .map-frame {
+        min-height: 300px;
+      }
+      .footer-grid { text-align: center; }
     }
   </style>
 </head>
@@ -681,9 +774,9 @@
           <p class="lead">Kvalitně odvedená práce, spolehlivá domluva a čisté předání pozemku.</p>
         </div>
         <div class="grid-3">
-          <article class="card"><h3>★★★★★</h3><p>„Rychlá domluva, zahrada posekaná a uklizená. Určitě se ozveme znovu.“</p><p><strong>— Rodinný dům</strong></p></article>
-          <article class="card"><h3>★★★★★</h3><p>„Pomohl nám s úklidem po zimě. Pracoval pečlivě a bez problémů.“</p><p><strong>— Chata</strong></p></article>
-          <article class="card"><h3>★★★★★</h3><p>„Férový přístup, slušné vystupování a dobrá práce. Doporučuji.“</p><p><strong>— Spokojený zákazník</strong></p></article>
+          <article class="card"><h3>★★★★★</h3><p>„Rychlá domluva, zahrada posekaná a uklizená. Určitě se ozveme znovu.“</p><p><strong>— Jan Novák</strong></p></article>
+          <article class="card"><h3>★★★★★</h3><p>„Pomohl nám s úklidem po zimě. Pracoval pečlivě a bez problémů.“</p><p><strong>— Petr Dvořák</strong></p></article>
+          <article class="card"><h3>★★★★★</h3><p>„Férový přístup, slušné vystupování a dobrá práce. Doporučuji.“</p><p><strong>— Martin Král</strong></p></article>
         </div>
       </div>
     </section>
@@ -735,9 +828,29 @@
           <div class="card"><h3>E-mail</h3><p><a href="mailto:udrzbazelen@gmail.com">udrzbazelen@gmail.com</a></p></div>
           <div class="card"><h3>Adresa</h3><p>Zahradní 87, Skřivany</p></div>
         </div>
-      </div>
+
+        </div>
     </section>
   </main>
+
+  <div class="footer-top">
+    <div class="container footer-grid">
+      <div>
+        <h3>Údržba zeleně Prošek</h3>
+        <p>Sekání trávy, živé ploty, rizikové kácení, odvoz odpadu a pravidelná péče o zeleň.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <p><a href="tel:+420775406016">+420 775 406 016</a></p>
+        <p><a href="mailto:udrzbazelen@gmail.com">udrzbazelen@gmail.com</a></p>
+      </div>
+      <div>
+        <h3>Působnost</h3>
+        <p>Praha, Praha-východ a okolí</p>
+        <p>Zahradní 87, Skřivany</p>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <div class="container">© 2026 Údržba zeleně Prošek | Martin Prošek | IČO: 67790101</div>
